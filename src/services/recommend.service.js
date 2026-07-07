@@ -1,4 +1,14 @@
 export function calculateScore(profile, item) {
+  
+  profile = {
+    skills: [],
+    interests: [],
+    experience: 0,
+    location: "",
+    expected_salary: 0,
+    ...profile,
+  };
+
   let score = 0;
 
   // Skill match
